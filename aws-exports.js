@@ -16,8 +16,8 @@ const awsmobile = {
             "profile",
             "aws.cognito.signin.user.admin"
         ],
-        "redirectSignIn": "http://localhost:3000/",
-        "redirectSignOut": "http://localhost:3000/",
+        "redirectSignIn": "https://poc-amplify.vercel.app/",
+        "redirectSignOut": "https://poc-amplify.vercel.app/",
         "responseType": "code"
     },
     "federationTarget": "COGNITO_USER_POOLS",
