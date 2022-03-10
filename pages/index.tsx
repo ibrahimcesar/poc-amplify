@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Amplify, Auth } from 'aws-amplify';
-// @ts-ignore
 import awsconfig from '../src/aws-exports';
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
@@ -11,7 +10,7 @@ import '@aws-amplify/ui-react/styles.css';
 Amplify.configure(awsconfig);
 
 
-const Home: NextPage = ({ signOut, user }) => {
+const Home: NextPage = ({ signOut, user }: any) => {
   return (
     <div className={styles.container}>
       <Head>
