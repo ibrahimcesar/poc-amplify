@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Amplify, Auth } from 'aws-amplify';
-import awsconfig from '../src/aws-exports';
-
+import { Amplify } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
+
+import awsconfig from '../src/aws-exports';
 
 Amplify.configure(awsconfig);
 
