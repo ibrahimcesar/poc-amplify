@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Amplify, Auth } from 'aws-amplify';
+// @ts-ignore
 import awsconfig from '../src/aws-exports';
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
